@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CalcolatriceCDI:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CalcolatriceCDI</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CalcolatriceCDI-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CalcolatriceCDI:war exploded" />
+    </root>
+  </artifact>
+</component>
