@@ -14,7 +14,7 @@ public class HelloResource {
 
 
     @GET
-    @Produces({"text/plain"})
+    @Produces("text/plain")
     @Path("/sum")
     public Response getSum(@QueryParam("firstNumber") int firstNumber, @QueryParam("secondNumber") int secondNumber) {
         return Response.ok(calculator.sum(firstNumber, secondNumber)).build();
@@ -29,7 +29,7 @@ public class HelloResource {
     }
 
     @GET
-    @Produces({"text/plain"})
+    @Produces("text/plain")
     @Path("/subtraction")
 
     public Response getSubtraction(@QueryParam("firstNumber") int firstNumber, @QueryParam("secondNumber") int secondNumber) {
@@ -38,7 +38,7 @@ public class HelloResource {
     }
 
     @GET
-    @Produces({"text/plain"})
+    @Produces("text/plain")
     @Path("/division")
     public Response getDivision(@QueryParam("firstNumber") int firstNumber, @QueryParam("secondNumber") int secondNumber) {
         return Response.ok(calculator.division(firstNumber, secondNumber)).build();
@@ -46,7 +46,7 @@ public class HelloResource {
     }
 
     @GET
-    @Produces({"text/plain"})
+    @Produces("text/plain")
     @Path("/product")
     public Response getProduct(@QueryParam("firstNumber") int firstNumber, @QueryParam("secondNumber") int secondNumber) {
         return Response.ok(calculator.product(firstNumber, secondNumber)).build();
